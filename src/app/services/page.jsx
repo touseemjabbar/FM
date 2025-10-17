@@ -35,7 +35,7 @@ export default function ServicesPage() {
       pricing: { starting: '$5,000', timeline: '4-8 weeks' },
       color: 'from-[#00BFFF] to-[#0080FF]',
       stats: [
-        { value: '80+', label: 'Websites Built' },
+        { value: '150+', label: 'Websites Built' },
         { value: '98%', label: 'Client Satisfaction' },
         { value: '50ms', label: 'Avg Load Time' }
       ]

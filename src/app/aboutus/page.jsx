@@ -49,37 +49,37 @@ export default function AboutUsPage() {
     {
       name: 'John Smith',
       role: 'CEO & Founder',
-      image: '👨‍💼',
+      image: '/client1.jpg',
       bio: '15+ years in software development'
     },
     {
       name: 'Sarah Johnson',
       role: 'CTO',
-      image: '👩‍💼',
+      image: '/client2.jpg',
       bio: 'Expert in cloud architecture'
     },
     {
       name: 'Michael Chen',
       role: 'Lead Developer',
-      image: '👨‍💻',
+      image: '/client3.jpg',
       bio: 'Full-stack development specialist'
     },
     {
       name: 'Emily Rodriguez',
       role: 'Design Director',
-      image: '👩‍🎨',
+      image: '/client4.jpg',
       bio: 'UI/UX design & user research'
     },
     {
       name: 'David Thompson',
       role: 'Product Manager',
-      image: '👨‍💼',
+      image: '/client5.jpg',
       bio: 'Agile & product strategy expert'
     },
     {
       name: 'Lisa Anderson',
       role: 'Head of QA',
-      image: '👩‍💻',
+      image: '/client6.jpg',
       bio: 'Quality assurance & testing'
     }
   ];
@@ -298,7 +298,13 @@ export default function AboutUsPage() {
                 className="bg-gradient-to-br from-[#0d0d0d] to-[#1a1a1a] border border-gray-800 rounded-2xl p-8 text-center hover:border-[#00BFFF] transition-all duration-300"
               >
                 <div className="w-24 h-24 bg-gradient-to-br from-[#00BFFF] to-[#0080FF] rounded-full flex items-center justify-center text-4xl mx-auto mb-4">
-                  {member.image}
+                  {/* {member.image} */}
+                     <img 
+                      src={member.image} 
+                      alt={member.name}
+                      className="w-full h-full object-cover rounded-full"
+                    
+                    />
                 </div>
                 <h3 className="text-xl font-bold mb-2">{member.name}</h3>
                 <p className="text-[#00BFFF] font-semibold mb-3">{member.role}</p>
@@ -327,13 +333,13 @@ export default function AboutUsPage() {
             <div className="flex flex-wrap gap-4 justify-center">
               <motion.button
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-gradient-to-r from-[#00BFFF] to-[#0080FF] text-black font-semibold rounded-full hover:shadow-[0_0_30px_rgba(0,191,255,0.5)] transition-all duration-300"
+                className="px-8 py-4 bg-gradient-to-r from-[#00BFFF] to-[#0080FF] text-black font-semibold rounded-full cursor-pointer hover:shadow-[0_0_30px_rgba(0,191,255,0.5)] transition-all duration-300"
               >
                 Get Free Consultation
               </motion.button>
               <motion.button
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 border-2 border-[#00BFFF] text-[#00BFFF] font-semibold rounded-full hover:bg-[#00BFFF] hover:text-black transition-all duration-300"
+                className="px-8 py-4 border-2 border-[#00BFFF] text-[#00BFFF] font-semibold rounded-full hover:bg-[#00BFFF] cursor-pointer hover:text-black transition-all duration-300"
               >
                 View Our Work
               </motion.button>

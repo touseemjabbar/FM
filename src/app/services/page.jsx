@@ -524,7 +524,7 @@ export default function ServicesPage() {
                 </div>
                 <div className="flex gap-4">
                   <motion.button
-                    className={`px-8 py-4 bg-gradient-to-r ${service.color} text-white font-semibold rounded-full hover:shadow-[0_0_30px_rgba(0,191,255,0.4)] transition-all duration-300 flex items-center gap-2`}
+                    className={`px-8 py-4 bg-gradient-to-r ${service.color} text-white cursor-pointer font-semibold rounded-full hover:shadow-[0_0_30px_rgba(0,191,255,0.4)] transition-all duration-300 flex items-center gap-2`}
                   >
                     Request Quote <ArrowRight className="w-5 h-5" />
                   </motion.button>
@@ -556,8 +556,9 @@ export default function ServicesPage() {
               >
                 Start Your Project
               </motion.button>
+              
               <motion.button
-                className="px-8 py-4 border-2 border-[#00BFFF] text-[#00BFFF] font-semibold rounded-full hover:bg-[#00BFFF] hover:text-black transition-all duration-300"
+                className="px-8 py-4 border-2 border-[#00BFFF] text-[#00BFFF] cursor-pointer font-semibold rounded-full hover:bg-[#00BFFF] hover:text-black transition-all duration-300"
               >
                 Schedule Consultation
               </motion.button>

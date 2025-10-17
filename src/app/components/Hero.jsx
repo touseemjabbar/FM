@@ -87,14 +87,14 @@ export default function HeroSection() {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-gradient-to-r from-[#00BFFF] to-[#0080FF] text-black font-semibold rounded-full hover:shadow-[0_0_30px_rgba(0,191,255,0.5)] transition-all duration-300 flex items-center gap-2"
+                className="px-8 py-4 bg-gradient-to-r from-[#00BFFF] to-[#0080FF] cursor-pointer text-black font-semibold rounded-full hover:shadow-[0_0_30px_rgba(0,191,255,0.5)] transition-all duration-300 flex items-center gap-2"
               >
                 Get Started <ArrowRight className="w-5 h-5" />
               </motion.button>
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 border-2 border-[#00BFFF] text-[#00BFFF] font-semibold rounded-full hover:bg-[#00BFFF] hover:text-black transition-all duration-300"
+                className="px-8 py-4 border-2 border-[#00BFFF] text-[#00BFFF] font-semibold cursor-pointer rounded-full hover:bg-[#00BFFF] hover:text-black transition-all duration-300"
               >
                 View Projects
               </motion.button>

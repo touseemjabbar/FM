@@ -152,7 +152,7 @@ export default function ServicesSection() {
             <div className="flex flex-wrap gap-4 justify-center">
               <motion.button
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-gradient-to-r from-[#00BFFF] to-[#0080FF] text-black font-semibold rounded-full transition-all duration-300 flex items-center gap-2"
+                className="px-8 py-4 bg-gradient-to-r from-[#00BFFF] to-[#0080FF]  cursor-pointer text-black font-semibold rounded-full transition-all duration-300 flex items-center gap-2"
               >
 
                 Get Free Consultation <ArrowRight className="w-5 h-5" />

@@ -352,13 +352,13 @@ export default function ProductsPage() {
             <div className="flex flex-wrap gap-4 justify-center">
               <motion.button
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-gradient-to-r from-[#00BFFF] to-[#0080FF] text-black font-semibold rounded-full hover:shadow-[0_0_30px_rgba(0,191,255,0.5)] transition-all duration-300"
+                className="px-8 py-4 bg-gradient-to-r from-[#00BFFF] to-[#0080FF] cursor-pointer text-black font-semibold rounded-full hover:shadow-[0_0_30px_rgba(0,191,255,0.5)] transition-all duration-300"
               >
                 Request Custom Development
               </motion.button>
               <motion.button
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 border-2 border-[#00BFFF] text-[#00BFFF] font-semibold rounded-full hover:bg-[#00BFFF] hover:text-black transition-all duration-300"
+                className="px-8 py-4 border-2 border-[#00BFFF] text-[#00BFFF] cursor-pointer font-semibold rounded-full hover:bg-[#00BFFF] hover:text-black transition-all duration-300"
               >
                 Schedule a Demo
               </motion.button>

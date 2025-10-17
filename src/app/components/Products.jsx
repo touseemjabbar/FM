@@ -144,7 +144,7 @@ export default function ProductsSection() {
 
                     <p className="text-gray-300 text-lg leading-relaxed">{product.description}</p>
 
-                    <div className="bg-gradient-to-br from-[#00BFFF] to-[#0080FF] bg-opacity-5 border border-[#00BFFF] border-opacity-20 rounded-xl p-4">
+                    <div className="from-[#00BFFF] to-[#0080FF] bg-opacity-5 border border-[#00BFFF] border-opacity-20 rounded-xl p-4">
                       <p className="text-gray-200 leading-relaxed">
                         <span className="text-[white] font-10">{product.benefits}</span>
                       </p>

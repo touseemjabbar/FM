@@ -1,13 +1,13 @@
 'use client';
 import { motion } from 'framer-motion';
 import { Star, Quote, Users, Award, TrendingUp, Heart } from 'lucide-react';
-
+import Image from 'next/image';
 export default function CustomerSection() {
   const testimonials = [
     {
       name: 'Sarah Johnson',
       position: 'CEO, TechStart Inc.',
-      image: '👩‍💼',
+      image: '/client1.jpg',
       rating: 5,
       text: 'Working with this team was an absolute pleasure. They delivered our web application ahead of schedule and exceeded all expectations. Their attention to detail and professionalism is unmatched.',
       project: 'E-commerce Platform'
@@ -15,7 +15,7 @@ export default function CustomerSection() {
     {
       name: 'Michael Chen',
       position: 'Founder, AppVenture',
-      image: '👨‍💻',
+      image: '/client2.jpg',
       rating: 5,
       text: 'The mobile app they developed for us has received outstanding feedback from our users. The team was responsive, creative, and truly understood our vision. Highly recommended!',
       project: 'Mobile Application'
@@ -23,7 +23,7 @@ export default function CustomerSection() {
     {
       name: 'Emily Rodriguez',
       position: 'CTO, DataFlow Systems',
-      image: '👩‍💼',
+      image: '/client3.jpg',
       rating: 5,
       text: 'Exceptional quality and outstanding support! They transformed our outdated system into a modern, efficient platform. The ROI has been incredible. Will definitely work with them again.',
       project: 'Enterprise Software'
@@ -31,7 +31,7 @@ export default function CustomerSection() {
     {
       name: 'David Thompson',
       position: 'Marketing Director, GrowthHub',
-      image: '👨‍💼',
+      image: '/client4.jpg',
       rating: 5,
       text: 'Their UI/UX design skills are top-notch. They created a beautiful, user-friendly interface that increased our conversion rate by 45%. Professional team with great communication.',
       project: 'Website Redesign'
@@ -39,7 +39,7 @@ export default function CustomerSection() {
     {
       name: 'Lisa Anderson',
       position: 'Product Manager, CloudTech',
-      image: '👩‍💻',
+      image: '/client5.jpg',
       rating: 5,
       text: 'From initial consultation to final delivery, everything was seamless. They provided valuable insights and delivered a solution that perfectly fits our needs. Outstanding work!',
       project: 'Cloud Migration'
@@ -47,7 +47,7 @@ export default function CustomerSection() {
     {
       name: 'James Wilson',
       position: 'Director, InnovateCo',
-      image: '👨‍💼',
+      image: '/client6.jpg',
       rating: 5,
       text: 'Best development team we have ever worked with! They are highly skilled, reliable, and committed to excellence. Our project was completed on time and within budget.',
       project: 'Custom CRM System'
@@ -165,7 +165,13 @@ export default function CustomerSection() {
 
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-gradient-to-br from-[#00BFFF] to-[#0080FF] rounded-full flex items-center justify-center text-2xl">
-                  {testimonial.image}
+                  {/* {testimonial.image} */}
+                     <img 
+                      src={testimonial.image} 
+                      alt={testimonial.name}
+                      className="w-full h-full object-cover rounded-full"
+                    
+                    />
                 </div>
                 <div>
                   <h4 className="font-semibold text-white">{testimonial.name}</h4>
@@ -222,7 +228,7 @@ export default function CustomerSection() {
             </p>
             <motion.button
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-gradient-to-r from-[#00BFFF] to-[#0080FF] text-black font-semibold rounded-full"
+              className="px-8 py-4 bg-gradient-to-r from-[#00BFFF] to-[#0080FF] text-black cursor-pointer font-semibold rounded-full"
             >
               Start Your Project Today
             </motion.button>
